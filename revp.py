@@ -1,10 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 import sys
 stack=[]
-s=sys.argv[1:]
 
-while(s):
-  e=s[0]
+for e in sys.argv[1:]:
   if (e=='+'):
     stack.append(stack.pop()+stack.pop())
   elif (e=='-'):
@@ -17,6 +15,5 @@ while(s):
     stack.append(stack.pop()/a)
   else:
     stack.append(float(e))
-  s=s[1:]
 
 print(stack.pop())
