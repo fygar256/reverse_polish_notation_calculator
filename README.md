@@ -1,10 +1,7 @@
-# rpn
+# Reverse Polish Notation (RPN) calculator.
 
-逆ポーランド記法（Reverse Polish Notation;RPN)の電卓です。
+Please use chmod +x revp.py to run it with execution rights.
 
-chmod +x revp.pyで実行権を付けて動かして下さい。
+Enter the argument expressions on the command line, separated by spaces, as in revp.py 10 20 +.
 
-引数の式はコマンドラインに、revp.py 10 20 +のように、スペースで区切って入力して下さい。
-
-エラーチェックはしてませんので、誤った文字列を渡すと、pythonがエラーを返します。
-
+No error checking is done, so if you pass an incorrect string, python will return an error.
